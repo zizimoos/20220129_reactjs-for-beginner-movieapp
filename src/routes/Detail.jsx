@@ -13,7 +13,16 @@ const Detail = () => {
     setMovieDetail(json.data.movie);
   }, []);
   return (
-    <div style={{ width: "300px" }}>
+    <div
+      style={{
+        width: "400px",
+        margin: "0 auto",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
       <h3>Detail for {movieDetail.title}</h3>
       <img src={movieDetail.medium_cover_image} alt={movieDetail.title} />
       <p>{movieDetail.description_full}</p>

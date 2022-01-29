@@ -5,8 +5,8 @@ const Movies = ({ movieList }) => {
     <div
       key={movie.id}
       style={{
-        width: "600px",
-        margin: "10px",
+        width: "400px",
+        marginBottom: "10px",
         borderRadius: "10px",
         display: "flex",
         color: "#2b2c30",
@@ -23,11 +23,10 @@ const Movies = ({ movieList }) => {
 
       <div style={{ padding: "10px" }}>
         <h4>{movie.title}</h4>
-        <h5>rating : {movie.rating}</h5>
         {movie.genres.slice(0, 2).map((genre, index) => (
           <li key={index}>{genre}</li>
         ))}
-        <p>{movie.summary.slice(0, 350)}...</p>
+        <p>{movie.summary.slice(0, 200)}...</p>
       </div>
     </div>
   ));

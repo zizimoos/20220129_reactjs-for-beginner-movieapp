@@ -15,8 +15,17 @@ function Home() {
   }, []);
 
   return (
-    <div className="App">
-      <h3>Movie App</h3>
+    <div
+      style={{
+        width: "400px",
+        margin: "0 auto",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <h3>MOVIES FOR YOU</h3>
       {isLoading ? <div>loading ...</div> : <Movies movieList={movieList} />}
     </div>
   );
