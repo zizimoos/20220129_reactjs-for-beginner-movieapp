@@ -15,7 +15,7 @@ const Detail = () => {
   return (
     <div
       style={{
-        width: "400px",
+        width: "360px",
         margin: "0 auto",
         display: "flex",
         flexDirection: "column",

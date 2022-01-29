@@ -5,7 +5,7 @@ const Movies = ({ movieList }) => {
     <div
       key={movie.id}
       style={{
-        width: "400px",
+        width: "360px",
         marginBottom: "10px",
         borderRadius: "10px",
         display: "flex",
@@ -17,7 +17,7 @@ const Movies = ({ movieList }) => {
         <img
           src={movie.medium_cover_image}
           alt={movie.title}
-          style={{ height: "300px", padding: "10px" }}
+          style={{ height: "250px", padding: "10px" }}
         />
       </Link>
 
@@ -26,7 +26,7 @@ const Movies = ({ movieList }) => {
         {movie.genres.slice(0, 2).map((genre, index) => (
           <li key={index}>{genre}</li>
         ))}
-        <p>{movie.summary.slice(0, 200)}...</p>
+        <p>{movie.summary.slice(0, 150)}...</p>
       </div>
     </div>
   ));
